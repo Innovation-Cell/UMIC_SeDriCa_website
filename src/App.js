@@ -10,6 +10,7 @@ import MRgro from './components/RGroup/MRgro';
 import MGallery from './components/Gallery/MGallery';
 import MedBlo from './components/MediaBlog/MedBlo';
 import Subsystems from "./components/Subsystems/Subsystems";
+import Mash from "./components/Mashruwala/mash"
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/MediaBlog" element={<MedBlo />} />
             <Route path="/Gallery" element={<MGallery />} />
             <Route path="/ResearchGroup" element={<MRgro />} />
+            <Route path="/Benefactors" element={<Mash />} />
           </Routes>
        
       </Router>

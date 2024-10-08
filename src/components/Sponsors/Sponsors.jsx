@@ -89,6 +89,7 @@ function Sponsors() {
       <div id="collaborators" className="collaborators-form-container">
         <div className="collaborate-container">
           <h2 style={{textAlign:"center",fontFamily:'Planer'}}>Collaborate with Us</h2>
+          <p style={{textAlign:"center"}}>Our Team will make sure to get back to you</p>
           <div className="fle">
           {isSubmitted ? (
             <p className="confirmation-message">
