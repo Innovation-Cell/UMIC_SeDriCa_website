@@ -1,0 +1,25 @@
+
+.ro{
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+.alp{
+  margin-top: 0;
+}
+
+  
+  .flex-auto {
+    flex: 0 0 auto;
+  }
+  
+  .blog-post {
+    margin-bottom: 4rem;
+  }
+  .blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #727272;
+  }
+
+
+  
