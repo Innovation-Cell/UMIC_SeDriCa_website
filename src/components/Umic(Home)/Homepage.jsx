@@ -16,7 +16,6 @@ function Homepage(){
         <Hero/>
         <Content/>
         <Footer/>
-        <img src={intro} style={{width:'100%'}}/>
         </>
     )
 }

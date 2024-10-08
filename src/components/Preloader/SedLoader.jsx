@@ -2,25 +2,32 @@ import React, { useState, useEffect } from 'react';
 import './SedLoader.css'; // CSS for full-screen styling
 import './Banner.css';    // CSS for banner styling
 
-const SedLoader = ({ gifUrl, duration}) => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [isFadingOut, setIsFadingOut] = useState(false);
-//   const [showBanner, setShowBanner] = useState(false);
+const SedLoader = ({ gifUrl, duration, children }) => {
+    const [isLoading, setIsLoading] = useState(true);
+    const [isFadingOut, setIsFadingOut] = useState(false);
+   
+  
+    useEffect(() => {
+      // Check local storage to see if the preloader has been shown
+      const hasSeenPreloader = sessionStorage.getItem('hasSeenPreloader');
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsFadingOut(true);
-      // Allow the fade-out animation to complete before hiding the preloader
-      setTimeout(() => {
+      if (!hasSeenPreloader) {
+        // Show preloader only if not shown before in this session
+        const timer = setTimeout(() => {
+          setIsFadingOut(true);
+          setTimeout(() => {
+            setIsLoading(false);
+            // Mark preloader as shown in session storage
+            sessionStorage.setItem('hasSeenPreloader', 'true');
+          }, 500); // Fade-out duration
+        }, duration);
+  
+        return () => clearTimeout(timer);
+      } else {
+        // If preloader has been shown in this session, skip it
         setIsLoading(false);
-        // setShowBanner(true);  // Show the banner after fade-out completes
-      }, 500); // Fade-out duration
-    }, duration);
-
-    return () => clearTimeout(timer); // Cleanup on component unmount
-  }, [duration]);
-
-
+      }
+    }, [duration]);
   return (
     <div>
       {isLoading ? (
