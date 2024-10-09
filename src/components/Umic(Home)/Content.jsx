@@ -1,24 +1,14 @@
-import { useRef,useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import vid from "../../assets/vid.mp4";
 import Card from "./Card";
-
 
 function Content() {
   // Reference to the video element
   const videoRef = useRef(null);
 
-  // Function to toggle video playback
-  const togglePlayback = () => {
-    if (videoRef.current) {
-      if (videoRef.current.paused) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-      }
-    }
-  };
   const startVideo = () => {
     if (videoRef.current && videoRef.current.paused) {
+      videoRef.current.muted = false; // Ensure sound is not muted
       videoRef.current.play().catch(error => {
         console.log('Video playback failed:', error);
       });
@@ -26,23 +16,24 @@ function Content() {
   };
 
   useEffect(() => {
-    // Add event listeners for scroll and touch events
-    const handleUserInteraction = () => {
-      startVideo();
-      // Remove event listeners after the first interaction
-      window.removeEventListener('scroll', handleUserInteraction);
-      window.removeEventListener('touchstart', handleUserInteraction);
+    const videoElement = videoRef.current; // Save a reference to videoRef.current
+
+    const handleCanPlayThrough = () => {
+      startVideo(); // Play the video once it is ready
     };
 
-    window.addEventListener('scroll', handleUserInteraction);
-    window.addEventListener('touchstart', handleUserInteraction);
+    if (videoElement) {
+      // Add the canplaythrough event listener
+      videoElement.addEventListener('canplaythrough', handleCanPlayThrough);
+    }
 
-    // Cleanup event listeners on component unmount
     return () => {
-      window.removeEventListener('scroll', handleUserInteraction);
-      window.removeEventListener('touchstart', handleUserInteraction);
+      if (videoElement) {
+        // Clean up the event listener
+        videoElement.removeEventListener('canplaythrough', handleCanPlayThrough);
+      }
     };
-  }, []);
+  }, []); // Ensure the effect only runs once by leaving dependencies empty
 
   return (
     <>
@@ -69,7 +60,7 @@ function Content() {
             }}
             autoPlay
             loop
-            onClick={togglePlayback} 
+            onClick={() => videoRef.current && videoRef.current.pause()}
           >
             <source src={vid} type="video/mp4" />
           </video>
