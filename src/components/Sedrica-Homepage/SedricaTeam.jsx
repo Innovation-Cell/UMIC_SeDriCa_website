@@ -419,7 +419,7 @@ function SedricaCard() {
         <div className="card-content col-lg-4">
           <MyCard lnk_mail={'kshitijvaidya16@gmail.com'} lnk={'https://www.linkedin.com/in/kshitij-vaidya-9b770820a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'} img={sub5} />
           <h2 className="fw-normal">Kshitij Vaidya</h2>
-          <p className="card-p">Motion Planning Subsystem Head</p>
+          <p className="card-p">Communication Subsystem Head</p>
         </div>
         <div className="card-content col-lg-4">
           <MyCard lnk_mail={'virtim8@gmail.com'} lnk={'https://www.linkedin.com/in/virti-mehta-b35ab2204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'} img={sub3} />
@@ -451,7 +451,7 @@ function SedricaCard() {
       <div className="card-content col-lg-4">
           <MyCard lnk_mail={'johansbiju@gmail.com '} lnk={'https://in.linkedin.com/in/johan-biju-b04564327'} img={sph6} />
           <h2 className="fw-normal">Johan Sam Biju</h2>
-          <p className="card-p">Motion Planning</p>
+          <p className="card-p">Controls</p>
         </div>
         <div className="card-content col-lg-4">
           <MyCard lnk_mail={'Kanakalasricharanraj@gmail.com'} lnk={'https://www.linkedin.com/in/sri-charan-raj-kanakala-006158287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'} img={sph2} />
@@ -461,7 +461,7 @@ function SedricaCard() {
         <div className="card-content col-lg-4">
           <MyCard lnk_mail={'nenwanipaawan05@gmail.com'} lnk={'https://www.linkedin.com/in/paawan-nenwani-1b989328a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'} img={sph5} />
           <h2 className="fw-normal">Paawan</h2>
-          <p className="card-p">Perception</p>
+          <p className="card-p">Mechatronics</p>
         </div>
       </div>
       <div className="two-container row">
