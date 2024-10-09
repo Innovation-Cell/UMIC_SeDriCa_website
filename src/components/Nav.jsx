@@ -31,6 +31,8 @@ function MyClass() {
         return 6;
       case "/ResearchGroup":
         return 7;
+      case "/Benefactors":
+        return 8;
       default:
         return 0;
     }
@@ -83,7 +85,7 @@ function MyClass() {
       }}
         />
         <div className="navigation">
-          <img
+          <a href="/"><img
             src={Umic}
             className="logo"
             alt="Logo"
@@ -96,8 +98,8 @@ function MyClass() {
               transform: "translateY(-50%)",
               objectFit: "contain",
             }}
-          />
-          <img
+          /> </a>
+          <a href="/Teams/Sedrica"><img
             src={Sedrica}
             className="logo"
             alt="Logo"
@@ -110,7 +112,7 @@ function MyClass() {
               transform: "translateY(-50%)",
               objectFit: "contain",
             }}
-          />
+          /> </a>
           <ul>
             <li
               className={`list ${activeIndex === 0 ? "active" : ""}`}
@@ -144,7 +146,7 @@ function MyClass() {
                 <span className="icon">
                   <ion-icon name="car-sport"></ion-icon>
                 </span>
-                <span className="text">Sedrica</span>
+                <span className="text">SeDriCa</span>
                 <span className="circle" />
               </Link>
             </li>
@@ -208,7 +210,19 @@ function MyClass() {
                 <span className="circle" />
               </Link>
             </li>
-         
+            <li
+              className={`list ${activeIndex === 8 ? "active" : ""}`}
+              onClick={() => handleClick(8)}
+            >
+              <Link to="/Benefactors">
+                <span className="icon">
+                <ion-icon name="hand-right"></ion-icon>
+                </span>
+                <span className="text">Benefactors</span>
+                <span className="circle" />
+              </Link>
+            </li>
+
           </ul>
 
           <div className="hamburger-menu icon" onClick={toggleMenu} style={{ position: "absolute",top:"20px", height: "50px" }}>
@@ -225,6 +239,7 @@ function MyClass() {
           <Link to="/Gallery" onClick={() => handleClick(5)}>Gallery</Link>
           <Link to="/sponsors" onClick={() => handleClick(6)}>Sponsors</Link>
           <Link to="/ResearchGroup" onClick={() => handleClick(7)}>Research</Link>
+          <Link to="/Benefactors" onClick={() => handleClick(8)}>Benefactors</Link>
           <a style={{ color: "red" }} href={location.pathname} onClick={() => handleClick(activeIndex)}>Close</a>
         </div>
       </div>

@@ -46,7 +46,7 @@ function Footer() {
                   <h6>Location: UMIC Lab, Near Applied Materials Lab, Manas Building, IIT Bombay , Powai, Maharashtra 400076</h6>
 
                 </div>
-              
+                <a href="https://www.iitb.ac.in/" target="_blank" rel="noreferrer">
                 <img
                   src={logo}
                   className="logo"
@@ -55,6 +55,7 @@ function Footer() {
                   height="90"
                   style={{ objectFit: "contain"}} 
                 />
+                </a>
               </div>
             </div>
           </div>
@@ -62,7 +63,7 @@ function Footer() {
             className="d-flex flex-sm-row justify-content-end pt-4 mt-4 border-top"
             style={{ color: "white" }}
           >
-            <p>© 2024 SeDriCa. IIT BOMBAY.</p>
+            <p>© 2024 UMIC. IIT BOMBAY.</p>
           </div>
         </div>
       </footer>

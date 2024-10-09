@@ -17,7 +17,7 @@
 .hero-title {
   z-index: 10;
   font-size: 5rem;
-  /* font-family: 'Archivo Black'; */
+ font-family: 'Archivo Black'; 
   color: white;
   font-weight: 900;
   text-align: left; /* Left align text */
