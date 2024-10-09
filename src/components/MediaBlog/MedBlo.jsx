@@ -85,10 +85,10 @@ function MedBlo() {
               <div className="p-4 mb-3 bg-body-tertiary rounded mb-4">
                 <h4>About Us</h4>
                 <p className="mb-0">
-                Welcome to Sedrica Insights, the official blog of UMIC Sedrica, IIT Bombay's autonomous car driving team. </p>
+                Welcome to SeDriCa Insights, the official blog of UMIC SeDriCa, IIT Bombay's autonomous car driving team. </p>
                 <p className="mb-0">Our blog is dedicated to providing insightful articles, updates, and in-depth analysis on cutting-edge developments in autonomous driving technology, robotics, and artificial intelligence.</p>
 
-                <p className="mb-0">At Sedrica, we’re on a mission to transform the future of transportation through innovation and research in self-driving cars. Our blog not only showcases the progress and achievements of our team but also aims to keep you informed on the latest trends and advancements in the field of autonomous vehicles.</p>
+                <p className="mb-0">At SeDriCa, we’re on a mission to transform the future of transportation through innovation and research in self-driving cars. Our blog not only showcases the progress and achievements of our team but also aims to keep you informed on the latest trends and advancements in the field of autonomous vehicles.</p>
 
                 <p className="mb-0">From behind-the-scenes updates on our research projects to discussions on global autonomous driving challenges, we bring you a unique perspective on the world of self-driving technology. Whether you're a tech enthusiast, an aspiring engineer, or just curious about the future of mobility, there's something here for everyone.
                 </p>

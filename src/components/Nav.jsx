@@ -85,7 +85,7 @@ function MyClass() {
       }}
         />
         <div className="navigation">
-          <img
+          <a href="/"><img
             src={Umic}
             className="logo"
             alt="Logo"
@@ -98,8 +98,8 @@ function MyClass() {
               transform: "translateY(-50%)",
               objectFit: "contain",
             }}
-          />
-          <img
+          /> </a>
+          <a href="/Teams/Sedrica"><img
             src={Sedrica}
             className="logo"
             alt="Logo"
@@ -112,7 +112,7 @@ function MyClass() {
               transform: "translateY(-50%)",
               objectFit: "contain",
             }}
-          />
+          /> </a>
           <ul>
             <li
               className={`list ${activeIndex === 0 ? "active" : ""}`}
@@ -146,7 +146,7 @@ function MyClass() {
                 <span className="icon">
                   <ion-icon name="car-sport"></ion-icon>
                 </span>
-                <span className="text">Sedrica</span>
+                <span className="text">SeDriCa</span>
                 <span className="circle" />
               </Link>
             </li>

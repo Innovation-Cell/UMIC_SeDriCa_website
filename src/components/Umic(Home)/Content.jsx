@@ -1,5 +1,5 @@
 import { useRef,useEffect } from 'react';
-import vid from "../../assets/Snapinsta.app_video_An9msjr1wGwuBBltzUQZ1xCh63J2LtO2e06lut7BHSFc9wEmIDSbgKm1BAMcoq7l0UxTdg7NKALwDC0bxUTY7B-D.mp4";
+import vid from "../../assets/vid.mp4";
 import Card from "./Card";
 
 
