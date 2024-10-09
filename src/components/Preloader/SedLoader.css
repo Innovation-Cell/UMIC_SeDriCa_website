@@ -17,3 +17,11 @@
 .preloader.fade-out {
     opacity: 0; /* Fade out to invisible */
 }
+
+@media only screen and (max-width: 768px) {
+    .preloader-gif {
+      width: 100% !important;
+      height: 800% !important;
+      object-fit: contain !important; /* Zoom in and crop to cover full screen */
+    }
+  }

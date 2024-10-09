@@ -25,7 +25,7 @@ const SedLoader = ({ gifUrl, duration}) => {
     <div>
       {isLoading ? (
         <div className={`preloader ${isFadingOut ? 'fade-out' : ''}`}>
-          <img src={gifUrl} alt="Loading..." style={{width:'40%', height: 'auto'}} />
+          <img src={gifUrl} alt="Loading..." className='preloader-gif' style={{width:'100%', height: 'auto'}} />
         </div>
       ): null}
       {/* Banner appears after the preloader is gone */}

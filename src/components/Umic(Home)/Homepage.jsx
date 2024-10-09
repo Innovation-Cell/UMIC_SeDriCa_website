@@ -4,7 +4,7 @@ import MyClass from '../Nav';
 import Content from "./Content";
 import Hero from "./Hero";
 import SedLoader from '../Preloader/SedLoader.jsx';
-import intro from '../../assets/Intro.gif'
+import intro from '../../assets/Intro1.gif'
 
 
 function Homepage(){
