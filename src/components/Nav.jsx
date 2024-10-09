@@ -233,7 +233,7 @@ function MyClass() {
         <div ref={menuRef} className={`nav-menu ${menuOpen ? "active" : ""}`}>
           <Link to="/" onClick={() => handleClick(0)}>UMIC</Link>
           <Link to="/competitions" onClick={() => handleClick(1)}>Competition</Link>
-          <Link to="/Teams/Sedrica" onClick={() => handleClick(2)}>Sedrica</Link>
+          <Link to="/Teams/Sedrica" onClick={() => handleClick(2)}>SeDriCa</Link>
           <Link to="/Subsystems" onClick={() => handleClick(3)}>Subsystems</Link>
           <Link to="/MediaBlog" onClick={() => handleClick(4)}>Blogs & Media</Link>
           <Link to="/Gallery" onClick={() => handleClick(5)}>Gallery</Link>
