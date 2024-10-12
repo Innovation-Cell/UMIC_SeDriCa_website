@@ -84,6 +84,9 @@ function Hero() {
             <div className="caption text-start p-1">
               <h1>F1-TENTH</h1>
             </div>
+            <div className="caption2 text-start p-1">
+            <h3>Courtesy: Rahul Mangharam</h3>
+            </div>
           </div>
 
           <div className="carousel-item" data-bs-interval="2500">

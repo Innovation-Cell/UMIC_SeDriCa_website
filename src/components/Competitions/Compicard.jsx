@@ -127,7 +127,7 @@ function Compi() {
               <p className="lead my-3">
 
 F1/10 F1TENTH Autonomous Racing is a semi-regular competition organized by an international community of researchers, engineers, and autonomous systems enthusiasts. The teams participating in 19th F1TENTH Grand Prix at MS 2024 will build a 1:10 scaled autonomous race car according to a given specification and write software for it to fulfill the objectives for the competition: Don’t crash and minimize laptime.
-</p>
+<h4>Courtesy: Rahul Mangharam</h4> </p>
            </div>
 
             {/* Image Column */}
