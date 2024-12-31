@@ -1,0 +1,27 @@
+/* Full screen for the preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Full viewport width */
+    height: 100%; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Background color */
+    z-index: 9999; /* Ensure it stays on top */
+    opacity: 1; /* Fully visible by default */
+    transition: opacity 0.5s ease; /* Fade-out transition */
+}
+  
+.preloader.fade-out {
+    opacity: 0; /* Fade out to invisible */
+}
+
+@media only screen and (max-width: 768px) {
+    .preloader-gif {
+      width: 100% !important;
+      height: 800% !important;
+      object-fit: contain !important; /* Zoom in and crop to cover full screen */
+    }
+  }

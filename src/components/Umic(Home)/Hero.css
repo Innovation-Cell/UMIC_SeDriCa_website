@@ -1,0 +1,321 @@
+
+.carousel-item {
+  position: relative;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 80px;   /* Increase the width of the arrow */
+  height: 80px;  /* Increase the height of the arrow */
+  background-size: 100%, 100%; /* Make the icon fill the entire size */
+}
+
+
+
+.caption {
+  position: absolute;
+  top: 75%;
+  left: 11%;
+  transform: translate(-50%, -50%) scale(0.5);  /* Move the caption to the center and scale it down */
+  animation: growCaption 1.2s ease-out forwards;  /* Add grow animation */
+  color: white;          /* Ensure the caption text is visible */
+  font-weight: 800;
+}
+
+.caption2 {
+  position: absolute;
+  top: 75%;
+  left: 88%;
+  transform: translate(-50%, -50%) scale(0.5);  /* Move the caption to the center and scale it down */
+  animation: growCaption 1.2s ease-out forwards;  /* Add grow animation */
+  color: white;          /* Ensure the caption text is visible */
+  font-weight: 900;
+}
+@keyframes growCaption {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);  /* Start small and centered */
+    opacity: 0;                                  /* Start with no opacity */
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);    /* Scale up to normal size */
+    opacity: 1;                                  /* Fade in */
+  }
+}
+
+.carousel-item.active .caption {
+  animation: growCaption 1.2s ease-out forwards;  /* Trigger animation on active carousel items */
+}
+
+
+/* Carousel images */
+.carousel-item {
+  height: 85.8vh; /* Set a fixed height for the carousel */
+  background-image: url("../../assets/cr.png");
+  
+  background-repeat: no-repeat;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ensure image fits within the container and keeps its aspect ratio */
+}
+
+@media (min-width: 1025px) {
+  .carousel-item {
+    background-size: 100%;
+  }
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 80px;   /* Increase the width of the arrow */
+  height: 60px;  /* Increase the height of the arrow */
+  background-size: 100%, 100%; /* Make the icon fill the entire size */
+}
+}
+
+@media (max-width: 1200px) {
+  .carousel-item {
+    height: 500px; /* Decrease the height for smaller screens */
+  }
+  .caption {
+    margin: 0.5rem;
+    top: 78%;
+    left: 8%;
+  }
+  .caption2 {
+      margin: 0.5rem;
+      top: 78%;
+      left: 88%;
+    }
+    
+  @keyframes growCaption {
+    0% {
+      transform: translate(-50%, -50%) scale(0.5);  /* Start small and centered */
+      opacity: 0;                                  /* Start with no opacity */
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.1);    /* Scale up to normal size */
+      opacity: 1;                                  /* Fade in */
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .caption {
+    margin: 0.5rem;
+    top: 65%;
+    left: 80%;
+    color: black;
+    background-color: aliceblue;
+    font-weight: 500;
+    }
+  .caption2 {
+    margin: 0.5rem;
+    top: 85%;
+    left: 80%;
+    color: black;
+    background-color: aliceblue;
+    font-weight: 500;
+    }
+    
+  @keyframes growCaption {
+    0% {
+      transform: translate(-50%, -50%) scale(0.5);  /* Start small and centered */
+      opacity: 0;                                  /* Start with no opacity */
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.1);    /* Scale up to normal size */
+      opacity: 1;                                  /* Fade in */
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 490px; /* Decrease the height for smaller screens */
+  }
+  .caption {
+    margin: 0.5rem;
+    top: 68%;
+    left: 80%;
+    color: black;
+    background-color: aliceblue;
+    font-weight: 900;
+    }
+    .caption2 {
+      margin: 0.5rem;
+      top: 88%;
+      left: 80%;
+      color: black;
+      background-color: aliceblue;
+      font-weight: 900;
+      }
+    .carousel-item img {
+      max-width: none;
+      max-height: none;
+      height: auto;
+      object-fit: fill; /* Ensure image fits within the container and keeps its aspect ratio */
+    }
+  @keyframes growCaption {
+    0% {
+      transform: translate(-50%, -50%) scale(0.5);  /* Start small and centered */
+      opacity: 0;                                  /* Start with no opacity */
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.1);    /* Scale up to normal size */
+      opacity: 1;                                  /* Fade in */
+    }
+  }
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 80px;   /* Increase the width of the arrow */
+  height: 80px;  /* Increase the height of the arrow */
+  background-size: 100%, 100%; /* Make the icon fill the entire size */
+}
+}
+
+
+@media (max-width: 650px) {
+  .caption {
+    margin: 0.5rem;
+    top: 85%;
+    left: 80%;
+    color: black;
+    background-color: aliceblue;
+    font-weight: 500;
+    }
+  .caption2 {
+    margin: 0.5rem;
+    top: 70%;
+    left: 80%;
+    color: black;
+    background-color: aliceblue;
+    font-weight: 500;
+    }
+    .caption h1{
+      font-size: 1.25rem;
+    }
+    .caption2 h3{
+      font-size: 1rem;
+    }
+  }
+
+
+@media (max-width: 500px) {
+  .carousel-item {
+    height: 340px; /* Decrease the height for smaller screens */
+    background-image: url("../../assets/cr.png");
+  }
+  .caption {
+    margin: 0.5rem;
+    top: 85%;
+    left: 20%;
+    color: white;
+    background-color: black;
+    }
+  .caption2{
+    top: 15%;
+    left: 20%;
+  }
+  .caption h1{
+    font-size: 1rem;
+  }
+  .caption2 h3{
+    font-size: 0.8rem;
+  }
+    .carousel-item img {
+      max-width: none;
+      max-height: none;
+      height: auto;
+      object-fit: contain; /* Ensure image fits within the container and keeps its aspect ratio */
+    }
+  @keyframes growCaption {
+    0% {
+      transform: translate(-50%, -50%) scale(0.5);  /* Start small and centered */
+      opacity: 0;                                  /* Start with no opacity */
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.0);    /* Scale up to normal size */
+      opacity: 1;                                  /* Fade in */
+    }
+  }
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 80px;   /* Increase the width of the arrow */
+  height: 60px;  /* Increase the height of the arrow */
+  background-size: 100%, 100%; /* Make the icon fill the entire size */
+}
+}
+
+.carousel-control-next{
+  margin-top: 60px;
+  max-height: 600px; /* Adjust this value as needed */
+  overflow: hidden;
+}
+.carousel-control-prev{
+  margin-top: 60px;
+  max-height: 600px; /* Adjust this value as needed */
+  overflow: hidden;
+}
+
+@media (max-width: 380px) {
+  .carousel-item {
+    height: 300px; /* Decrease the height for smaller screens */
+    background-image: url("../../assets/cr.png");
+  }
+  .caption {
+    margin: 0.5rem;
+    top: 83%;
+    left: 25%;
+    color: white;
+    background-color: black;
+  }
+  .caption2 {
+    margin: 0.2rem;
+    top: 11%;
+    left: 25%;
+    color: white;
+    background-color: black;
+  }
+  .caption2 h3{
+    font-size: 0.75rem;
+  }
+  .caption h1{
+    font-size: 1rem;
+  }
+    .carousel-item img {
+      max-width: none;
+      max-height: none;
+      height: auto;
+      object-fit: contain; /* Ensure image fits within the container and keeps its aspect ratio */
+    }
+  @keyframes growCaption {
+    0% {
+      transform: translate(-50%, -50%) scale(0.5);  /* Start small and centered */
+      opacity: 0;                                  /* Start with no opacity */
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.0);    /* Scale up to normal size */
+      opacity: 1;                                  /* Fade in */
+    }
+  }
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 80px;   /* Increase the width of the arrow */
+  height: 80px;  /* Increase the height of the arrow */
+  background-size: 100%, 100%; /* Make the icon fill the entire size */
+}
+.carousel-control-prev {
+  top: -20%;   /* Adjusts vertical position (lowering percentage moves it down) */
+}
+
+/* Move the right (next) arrow */
+.carousel-control-next {
+  top: -20%;    /* Adjusts vertical position */
+}
+}
+

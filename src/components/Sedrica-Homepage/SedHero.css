@@ -1,0 +1,46 @@
+/* Full-screen background image */
+.container-fluid {
+  position: relative;
+  width: 100%;
+  height: 75vh; /* Full viewport height */
+  background-image: url('../../assets/bg.gif');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start; /* Left alignment by default */
+  align-items: center; /* Vertically center the title */
+  padding-left: 10%; /* Left gap to mimic container */
+}
+
+.hero-title {
+  z-index: 10;
+  font-size: 5rem;
+ font-family: 'Archivo Black'; 
+  color: white;
+  font-weight: 900;
+  text-align: left; /* Left align text */
+  padding: 10%
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+  .container-fluid {
+    justify-content: center; /* Center title on smaller screens */
+    padding-left: 0; /* Remove left gap */
+    height: 70vh;
+  }
+
+  .hero-title {
+      font-size: 3rem; /* Smaller font size for tablets */
+      text-align: center; /* Center text on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+      font-size: 1.9rem; /* Smaller font size for mobile */
+      text-align: center; /* Center text on mobile */
+  }
+}

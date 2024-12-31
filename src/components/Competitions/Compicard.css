@@ -1,0 +1,44 @@
+
+
+/* Make all images in the right column equal-sized and responsive */
+.card-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-right img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures that image fits well inside the container */
+  width: 100%; /* Make image container fill available space */
+  max-height: 250px; /* Limit image height for uniformity */
+}
+
+/* Add responsiveness */
+@media (min-width: 768px) {
+  .card-right img {
+    max-height: 300px; /* Larger height on medium to large screens */
+  }
+}
+@media (max-width: 425px) {
+  .lead{
+    font-size: 0.80rem;
+  }
+  .display-4 {
+    font-size: 1.5rem; /* Smaller text size on small screens */
+  }
+}
+
+/* Adjust text size for smaller screens */
+@media (max-width: 1100px) {
+  .display-4 {
+    font-size: 2rem; /* Smaller text size on small screens */
+  }
+  
+  .lead {
+    font-size: 0.90rem; /* Smaller text size for paragraphs on small screens */
+  }
+}
+
+
